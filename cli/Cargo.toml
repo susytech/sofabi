@@ -1,0 +1,23 @@
+[package]
+name = "sofabi-cli"
+version = "6.0.0"
+authors = ["Susytech <admin@superstring.ch>", "Susytech <admin@susy.io>"]
+keywords = ["sophon", "sof", "abi", "solidity", "cli"]
+description = "Easy to use cli for conversion of sophon contract calls to bytecode."
+homepage = "https://github.com/susytech/sofabi"
+license = "MIT"
+
+[dependencies]
+rustc-hex = "1.0"
+serde = "1.0"
+serde_derive = "1.0"
+docopt = "0.8.1"
+sofabi = { version = "6.0", path = "../sofabi" }
+error-chain = { version = "0.12.0", default-features = false }
+
+[features]
+backtrace = ["error-chain/backtrace"]
+
+[[bin]]
+name = "sofabi"
+path = "src/main.rs"

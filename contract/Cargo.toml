@@ -1,0 +1,8 @@
+[package]
+name = "sofabi-contract"
+version = "6.0.0"
+authors = ["Susytech <admin@superstring.ch>", "Susytech <admin@susy.io>"]
+homepage = "https://github.com/susytech/sofabi"
+license = "MIT"
+keywords = ["sophon", "sof", "abi", "solidity", "derive"]
+description = "Easy to use conversion of sophon contract calls to bytecode."

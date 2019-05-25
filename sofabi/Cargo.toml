@@ -1,0 +1,28 @@
+[package]
+name = "sofabi"
+version = "6.1.0"
+authors = ["Susy Technologies <admin@susy.io>"]
+homepage = "https://github.com/susytech/sofabi"
+license = "MIT"
+keywords = ["sophon", "sof", "abi", "solidity", "cli"]
+description = "Easy to use conversion of sophon contract calls to bytecode."
+
+[dependencies]
+rustc-hex = "2.0"
+serde = "1.0"
+serde_json = "1.0"
+serde_derive = "1.0"
+tiny-keccak = "1.4"
+error-chain = { version = "0.12", default-features = false }
+sophon-types = "0.4"
+
+[dev-dependencies]
+hex-literal = "0.1.1"
+
+[features]
+backtrace = ["error-chain/backtrace"]
+
+[badges]
+travis-ci = { repository = "susytech/sofabi", branch = "master" }
+coveralls = { repository = "susytech/sofabi", branch = "master" }
+

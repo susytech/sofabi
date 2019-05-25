@@ -1,0 +1,2 @@
+[workspace]
+members = ["sofabi", "cli", "derive", "contract", "tests"]

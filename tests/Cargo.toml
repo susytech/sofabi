@@ -1,0 +1,11 @@
+[package]
+name = "sofabi-tests"
+version = "0.1.0"
+authors = ["debris <marek.kotewicz@gmail.com>"]
+
+[dependencies]
+sofabi = { path = "../sofabi" }
+sofabi-derive = { path = "../derive" }
+sofabi-contract = { path = "../contract" }
+rustc-hex = "2.0"
+hex-literal = "0.1.1"

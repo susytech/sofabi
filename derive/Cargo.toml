@@ -1,0 +1,18 @@
+[package]
+name = "sofabi-derive"
+version = "6.0.2"
+authors = ["Susytech <admin@superstring.ch>", "Susytech <admin@susy.io>"]
+homepage = "https://github.com/susytech/sofabi"
+license = "MIT"
+keywords = ["sophon", "sof", "abi", "solidity", "derive"]
+description = "Easy to use conversion of sophon contract calls to bytecode."
+
+[lib]
+proc-macro = true
+
+[dependencies]
+sofabi = {version = "6.0", registry="susytech"}
+heck = {version="0.3", registry="susytech"}
+syn = {version="0.15",registry="susytech"}
+quote = {version="0.6",registry="susytech"}
+proc-macro2 = {version="0.4",registry="susytech"}
